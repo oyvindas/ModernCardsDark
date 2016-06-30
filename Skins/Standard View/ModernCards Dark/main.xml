@@ -1,0 +1,532 @@
+<MJMS version="3.0">
+	<SKIN Name="Modern Cards: Dark Edition" Author="Øyvind de Freitas Sørensen" EMail="oyvind@defreitas.no" WebSite="https://defreitas.no" About="A JRMC skin inspired in part by Google Now, Windows 10 and Office 365" />
+
+	<!-- Enable the scale function in JRMC -->
+	<SCALE>
+		<Data Enabled="1" />
+	</SCALE>
+
+	<MAINFRAME>
+		<Data MinimumWidth="800" MinimumHeight="600" />
+
+		<Entry Name="LeftBorder" Bitmap="MainFrame_LeftBorder.png" />
+		<Entry Name="RightBorder" Bitmap="MainFrame_RightBorder.png" Rows="24,?-Flex" />
+
+		<!-- NOTE: This part makes up the entire top part of the player window (background for the menu, prev-play-next buttons, song title etc.) -->
+		<Entry Name="TopBorder" Bitmap="MainFrame_TopBorder.png" Columns="200,?-Flex,200" Rows="?-Flex,31" Cells="B1-Tile,B2-Tile,B3-Tile" />
+
+		<!-- NOTE: The larger bottom border of the window, which contains the status bar etc. -->
+		<Entry Name="BottomBorder" Bitmap="MainFrame_BottomBorder.png" Columns="23,?-Flex,23" Cells="A2-Tile " />
+
+		<!-- NOTE: Window control buttons, suco as CLOSE, MAXIMIZE, RESTORE & MINIMIZE. -->
+
+		<EntryGroup Name="CloseButton">
+			<Entry Platform="Windows" Bitmap="Close.png" NumberImages="5" Alignment="2" OffsetX="-1" OffsetY="1" />
+			<Entry Platform="Windows" Scale="2" Bitmap="Close-2x.png" NumberImages="5" Alignment="2" OffsetX="-1" OffsetY="1" />
+
+			<Entry Platform="Windows" PlatformVersion="6.2-6.3" Bitmap="Close-win8.png" NumberImages="5" Alignment="2" OffsetX="-3" OffsetY="0" />
+			<Entry Platform="Windows" Scale="2" PlatformVersion="6.2-6.3" Bitmap="Close-win8-2x.png" NumberImages="5" Alignment="2" OffsetX="-3" OffsetY="0" />
+
+			<Entry Platform="Mac" Bitmap="Close-osx.png" NumberImages="5" Alignment="0" OffsetX="7" OffsetY="6" />
+			<Entry Platform="Mac" Scale="2" Bitmap="Close-osx-2x.png" NumberImages="5" Alignment="0" OffsetX="7" OffsetY="6" />
+		</EntryGroup>
+
+		<EntryGroup Name="MaximizeButton">
+			<Entry Platform="Windows" Bitmap="Maximize.png" NumberImages="5" Alignment="2" OffsetX="-46" OffsetY="1" />
+			<Entry Platform="Windows" Scale="2" Bitmap="Maximize-2x.png" NumberImages="5" Alignment="2" OffsetX="-46" OffsetY="1" />
+
+			<Entry Platform="Windows" PlatformVersion="6.2-6.3" Bitmap="Maximize-win8.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="0" />
+			<Entry Platform="Windows" Scale="2" PlatformVersion="6.2-6.3" Bitmap="Maximize-win8-2x.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="0" />
+
+			<Entry Platform="Mac" Bitmap="Maximize-Restore-osx.png" NumberImages="5" Alignment="0" OffsetX="45" OffsetY="6" />
+			<Entry Platform="Mac" Scale="2" Bitmap="Maximize-Restore-osx-2x.png" NumberImages="5" Alignment="0" OffsetX="45" OffsetY="6" />
+		</EntryGroup>
+
+		<EntryGroup Name="RestoreButton">
+			<Entry Platform="Windows" Bitmap="Restore.png" NumberImages="5" Alignment="2" OffsetX="-46" OffsetY="1" />
+			<Entry Platform="Windows" Scale="2" Bitmap="Restore-2x.png" NumberImages="5" Alignment="2" OffsetX="-46" OffsetY="1" />
+
+			<Entry Platform="Windows" PlatformVersion="6.2-6.3" Bitmap="Restore-win8.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="0" />
+			<Entry Platform="Windows" Scale="2" PlatformVersion="6.2-6.3" Bitmap="Restore-win8-2x.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="0" />
+
+			<Entry Platform="Mac" Bitmap="Maximize-Restore-osx.png" NumberImages="5" Alignment="0" OffsetX="45" OffsetY="6" />
+			<Entry Platform="Mac" Scale="2" Bitmap="Maximize-Restore-osx-2x.png" NumberImages="5" Alignment="0" OffsetX="45" OffsetY="6" />
+		</EntryGroup>
+
+		<EntryGroup Name="MinimizeButton">
+			<Entry Platform="Windows" Bitmap="Minimize.png" NumberImages="5" Alignment="2" OffsetX="-91" OffsetY="1" />
+			<Entry Platform="Windows" Scale="2" Bitmap="Minimize-2x.png" NumberImages="5" Alignment="2" OffsetX="-91" OffsetY="1" />
+
+			<Entry Platform="Windows" PlatformVersion="6.2-6.3" Bitmap="Minimize-win8.png" NumberImages="5" Alignment="2" OffsetX="-75" OffsetY="0" />
+			<Entry Platform="Windows" Scale="2" PlatformVersion="6.2-6.3" Bitmap="Minimize-win8-2x.png" NumberImages="5" Alignment="2" OffsetX="-75" OffsetY="0" />
+
+			<Entry Platform="Mac" Bitmap="Minimize-osx.png" NumberImages="5" Alignment="0" OffsetX="26" OffsetY="6" />
+			<Entry Platform="Mac" Scale="2" Bitmap="Minimize-osx-2x.png" NumberImages="5" Alignment="0" OffsetX="26" OffsetY="6" />
+		</EntryGroup>
+
+
+		<Entry Name="Splitter" Face3DColor="222222" Shadow3DColor="111111" Hilight3DColor="333333" />
+
+		<!-- NOTE: This controls the slim player. Haven't bothered skinning it, as I never, ever use it. Maybe at some point... -->
+		<Entry Name="SlimPlayer" Bitmap="SlimPlayer.png" Columns="5,?-Flex,5" />
+
+		<!-- NOTE: The full-screen popup player controls. Doesn't properly deal with transparency, so it's not really possible to get antialiased rounded edges...for now at least. -->
+		<Entry Name="FullscreenPlayer" Bitmap="FullscreenPlayer.png" Columns="8,?-Flex,8" Rows="?-Flex,31" Cells="B1-Tile,B2-Tile,B3-Tile" />
+	</MAINFRAME>
+
+	<PLAYERBAR>
+		<!-- NOTE: Set this to 0 to prevent larger fonts stretching images -->
+		<Data AllowEnlargeForFont="1" />
+
+		<!-- NOTE: This part controls the color and font style of the name of the song, length etc. at the top of the window. -->
+		<Entry Name="Display" >
+			<Colors TitleText="B5B5B5" StatusText="ABB5BF" />
+			<DisplayFont TitleSize="125" TitleWeight="800" StatusSize="95" StatusWeight="400" />
+		</Entry>
+
+		<!-- NOTE: Position slider/progress bar -->
+		<EntryGroup Name="PositionSlider">
+			<Entry Bitmap="PlayerBar_SliderPos.png" Margins="7,0,7,0" DrawMode="REGION_E_HTILE" />
+			<Entry Scale="1.5" Bitmap="PlayerBar_SliderPos-1,5x.png" Margins="7,0,7,0" DrawMode="REGION_E_HTILE" />
+			<Entry Scale="2" Bitmap="PlayerBar_SliderPos-2x.png" Margins="7,0,7,0" DrawMode="REGION_E_HTILE" />
+		</EntryGroup>
+
+		<EntryGroup Name="PositionSliderFront">
+			<Entry Bitmap="PlayerBar_SliderPosFront.png" Margins="6,0,3,0" DrawMode="REGION_E_HTILE" />
+			<Entry Scale="1.5" Bitmap="PlayerBar_SliderPosFront-1,5x.png" Margins="6,0,3,0" DrawMode="REGION_E_HTILE" />
+			<Entry Scale="2" Bitmap="PlayerBar_SliderPosFront-2x.png" Margins="6,0,3,0" DrawMode="REGION_E_HTILE" />
+		</EntryGroup>
+
+		<EntryGroup Name="PositionSliderThumb">
+			<Entry Bitmap="PlayerBar_SliderPosThumb.png" NumberImages="4" />
+			<Entry Scale="1.5" Bitmap="PlayerBar_SliderPosThumb-1,5x.png" NumberImages="4" />
+			<Entry Scale="2" Bitmap="PlayerBar_SliderPosThumb-2x.png" NumberImages="4" />
+		</EntryGroup>
+
+		<!-- NOTE: Volume slider/bar -->
+		<EntryGroup Name="VolumeSlider">
+			<Entry Bitmap="PlayerBar_SliderVol.png" />
+			<Entry Scale="1.5" Bitmap="PlayerBar_SliderVol-1,5x.png" />
+			<Entry Scale="2" Bitmap="PlayerBar_SliderVol-2x.png" />
+		</EntryGroup>
+
+		<EntryGroup Name="VolumeSliderFront">
+			<Entry Bitmap="PlayerBar_SliderVolFront.png" />
+			<Entry Scale="1.5" Bitmap="PlayerBar_SliderVolFront-1,5x.png" />
+			<Entry Scale="2" Bitmap="PlayerBar_SliderVolFront-2x.png" />
+		</EntryGroup>
+
+		<!-- <Entry Name="VolumeSliderThumb" Bitmap="PlayerBar_SliderPosVolThumb.png" NumberImages="4" Margins="6,0,5,0" DrawMode="REGION_E_HTILE" /> -->
+
+		<!-- NOTE: Various buttons such as play, pause, next etc. -->
+		<EntryGroup Name="PlayButton">
+			<Entry Name="PlayButton" Bitmap="PlayerBar_PlayButton.png" NumberImages="5" />
+			<Entry Scale="1.5" Name="PlayButton" Bitmap="PlayerBar_PlayButton-1,5x.png" NumberImages="5" />
+			<Entry Scale="2" Name="PlayButton" Bitmap="PlayerBar_PlayButton-2x.png" NumberImages="5" />
+		</EntryGroup>
+
+		<EntryGroup Name="StopButton">
+			<Entry Name="StopButton" Bitmap="PlayerBar_StopButton.png" NumberImages="5" />
+			<Entry Scale="1.5" Name="StopButton" Bitmap="PlayerBar_StopButton-1,5x.png" NumberImages="5" />
+			<Entry Scale="2" Name="StopButton" Bitmap="PlayerBar_StopButton-2x.png" NumberImages="5" />
+		</EntryGroup>
+
+		<EntryGroup Name="PauseButton">
+			<Entry Bitmap="PlayerBar_PauseButton.png" NumberImages="5" />
+			<Entry Scale="1.5" Bitmap="PlayerBar_PauseButton-1,5x.png" NumberImages="5" />
+			<Entry Scale="2" Bitmap="PlayerBar_PauseButton-2x.png" NumberImages="5" />
+		</EntryGroup>
+
+		<EntryGroup Name="NextButton">
+			<Entry Name="NextButton" Bitmap="PlayerBar_NextButton.png" NumberImages="5" />
+			<Entry Scale="1.5" Name="NextButton" Bitmap="PlayerBar_NextButton-1,5x.png" NumberImages="5" />
+			<Entry Scale="2" Name="NextButton" Bitmap="PlayerBar_NextButton-2x.png" NumberImages="5" />
+		</EntryGroup>
+
+		<EntryGroup Name="PreviousButton">
+			<Entry Bitmap="PlayerBar_PrevButton.png" NumberImages="5" />
+			<Entry Scale="1.5" Bitmap="PlayerBar_PrevButton-1,5x.png" NumberImages="5" />
+			<Entry Scale="2" Bitmap="PlayerBar_PrevButton-2x.png" NumberImages="5" />
+		</EntryGroup>
+
+		<Entry Name="Search" Bitmap="PlayerBar_Search.png" Margins="2,2,6,2" OffsetY="50" OffsetX="10">
+			<Colors Text="909090" SelectedText="f0f4fd" SelectedBack="0078d7" />
+		</Entry>
+
+		<EntryGroup Name="ShuffleOffButton">
+			<Entry Bitmap="PlayerBar_ShOffButton.png" NumberImages="5" />
+			<Entry Scale="2" Bitmap="PlayerBar_ShOffButton-2x.png" NumberImages="5" />
+		</EntryGroup>
+
+		<EntryGroup Name="ShuffleButton">
+			<Entry Bitmap="PlayerBar_ShButton.png" NumberImages="5" />
+			<Entry Scale="2" Bitmap="PlayerBar_ShButton-2x.png" NumberImages="5" />
+		</EntryGroup>
+
+		<EntryGroup Name="ContinuousOffButton">
+			<Entry Bitmap="PlayerBar_ContOffButton.png" NumberImages="5" />
+			<Entry Scale="2" Bitmap="PlayerBar_ContOffButton-2x.png" NumberImages="5" />
+		</EntryGroup>
+
+		<EntryGroup Name="ContinuousButton">
+			<Entry Bitmap="PlayerBar_ContButton.png" NumberImages="5" />
+			<Entry Scale="2" Bitmap="PlayerBar_ContButton-2x.png" NumberImages="5" />
+		</EntryGroup>
+
+		<EntryGroup Name="ContinuousSongButton">
+			<Entry Bitmap="PlayerBar_ContSongButton.png" NumberImages="5" />
+			<Entry Scale="2" Bitmap="PlayerBar_ContSongButton-2x.png" NumberImages="5" />
+		</EntryGroup>
+
+		<EntryGroup Name="DSPButton">
+			<Entry Bitmap="PlayerBar_DSPButton.png" NumberImages="5" />
+			<Entry Scale="2" Bitmap="PlayerBar_DSPButton-2x.png" NumberImages="5" />
+		</EntryGroup>
+
+		<EntryGroup Name="DSPDirectButton">
+			<Entry Bitmap="PlayerBar_DSPDirectButton.png" NumberImages="5" />
+			<Entry Scale="2" Bitmap="PlayerBar_DSPDirectButton-2x.png" NumberImages="5" />
+		</EntryGroup>
+
+		<EntryGroup Name="MuteButton">
+			<Entry Bitmap="PlayerBar_MuteButton.png" NumberImages="5" />
+			<Entry Scale="2" Bitmap="PlayerBar_MuteButton-2x.png" NumberImages="5" />
+		</EntryGroup>
+
+		<EntryGroup Name="MuteOffButton">
+			<Entry Bitmap="PlayerBar_MuteOffButton.png" NumberImages="5" />
+			<Entry Scale="2" Bitmap="PlayerBar_MuteOffButton-2x.png" NumberImages="5" />
+		</EntryGroup>
+
+		<EntryGroup Name="SearchMenuButton">
+			<Entry Bitmap="PlayerBar_SearchMenuButton.png" NumberImages="4" />
+			<Entry Scale="2" Bitmap="PlayerBar_SearchMenuButton-2x.png" NumberImages="4" />
+		</EntryGroup>
+
+		<EntryGroup Name="SearchClearButton">
+			<Entry Bitmap="PlayerBar_SearchClearButton.png" NumberImages="4" />
+			<Entry Scale="2" Bitmap="PlayerBar_SearchClearButton-2x.png" NumberImages="4" />
+		</EntryGroup>
+
+	</PLAYERBAR>
+
+	<TOOLBARS>
+		<Colors InactiveBlend="E0E0E0" />
+		<Entry Name="StatusBar" TextColor="B5B5B5" />
+		<!-- NOTE: This is the top bar where the dropdown menu items are located -->
+		<EntryGroup name="TopBar">
+			<Entry Platform="Windows" Alignment="0" OffsetX="8" OffsetY="0">
+				<Colors Text="B5B5B5" HilightText="D8D8D8" SelectedText="FFFFFF" Separator="333333" />
+			</Entry>
+
+			<Entry Platform="Mac" Alignment="0" OffsetX="67" OffsetY="0">
+				<Colors Text="B5B5B5" HilightText="D8D8D8" SelectedText="FFFFFF" Separator="333333" />
+			</Entry>
+			<Entry Platform="Mac" Scale="1.25" Alignment="0" OffsetX="82" OffsetY="0">
+				<Colors Text="B5B5B5" HilightText="D8D8D8" SelectedText="FFFFFF" Separator="333333" />
+			</Entry>
+			<Entry Platform="Mac" Scale="1.5" Alignment="0" OffsetX="97" OffsetY="0">
+				<Colors Text="B5B5B5" HilightText="D8D8D8" SelectedText="FFFFFF" Separator="333333" />
+			</Entry>
+			<Entry Platform="Mac" Scale="1.75" Alignment="0" OffsetX="117" OffsetY="0">
+				<Colors Text="B5B5B5" HilightText="D8D8D8" SelectedText="FFFFFF" Separator="333333" />
+			</Entry>
+			<Entry Platform="Mac" Scale="2" Alignment="0" OffsetX="137" OffsetY="0">
+				<Colors Text="B5B5B5" HilightText="D8D8D8" SelectedText="FFFFFF" Separator="333333" />
+			</Entry>
+		</EntryGroup>
+		<!-- NOTE: The bottom status bar. The color text setting will colorize the icons as well, and in this skin the darker color makes them monotone so that they are barely visible until you hover over them. -->
+		<!-- TODO: Figure out if there's a way to verical align the icons so that they're positioned on the text baseline. -->
+		<Entry Name="BottomBar" >
+			<Colors Text="B5B5B5" HilightText="D8D8D8" SelectedText="FFFFFF" Separator="333333" />
+		</Entry>
+	</TOOLBARS>
+
+	<ACTIONWINDOW>
+		<Colors Text="909090" ActiveText="c8c8c8" Back="171717" ListBack="171717" ListText="909090" />
+		<!-- <Entry Name="Background" Bitmap="ActionWindow_Background.png" Margins="0,9,0,0" DrawMode="REGION_B_STRETCH,REGION_H_STRETCH,REGION_D_STRETCH,REGION_E_VSTRETCH,REGION_F_STRETCH" InternalMargins="0,0,0,0"/> -->
+		<!-- <Entry Name="Template" Bitmap="ActionWindow_Template.png" Margins="2,4,2,2" InternalMargins="1,0,1,0" VerticalSpacing="0" HeaderHeight="24" HeaderOnly="1" /> -->
+		<Entry Name="Back" Bitmap="ActionWindow_Back.png" Margins="0,0,0,0" NumberImages="3" />
+
+		<EntryGroup Name="Close">
+			<Entry Bitmap="ActionWindow_Close.png" Margins="0,0,0,0" NumberImages="3" />
+			<Entry Scale="2" Bitmap="ActionWindow_Close-2x.png" Margins="0,0,0,0" NumberImages="3" />
+		</EntryGroup>
+
+		<EntryGroup Name="Tools">
+			<Entry Bitmap="ActionWindow_Tools.png" Margins="0,0,0,0" NumberImages="3" />
+			<Entry Scale="2" Bitmap="ActionWindow_Tools-2x.png" Margins="0,0,0,0" NumberImages="3" />
+		</EntryGroup>
+
+		<EntryGroup Name="Restore">
+			<Entry Bitmap="ActionWindow_Restore.png" Margins="0,0,0,0" NumberImages="3" />
+			<Entry Scale="2" Bitmap="ActionWindow_Restore-2x.png" Margins="0,0,0,0" NumberImages="3" />
+		</EntryGroup>
+
+		<EntryGroup Name="Minimize">
+			<Entry Bitmap="ActionWindow_Minimize.png" Margins="0,0,0,0" NumberImages="3" />
+			<Entry Scale="2" Bitmap="ActionWindow_Minimize-2x.png" Margins="0,0,0,0" NumberImages="3" />
+		</EntryGroup>
+	</ACTIONWINDOW>
+
+	<FRAME>
+		<Data BorderResizeForText="1" BorderTopBottomLarger="1" />
+		<Colors Text="909090" DisabledText="c8c8c8" Face3D="222222" Shadow3D="111111" Hilight3D="333333" />
+
+		<!-- Options window etc. titlebar -->
+		<Entry Name="CaptionArea" OffsetX="0" Alignment="1" OffsetY="3" TextLeftIndent="0" TextRightIndent="0" >
+			<Colors ActiveText="B5B5B5" InactiveText="909090" TextShadow="171717" />
+			<Font Facename="Segoe UI" Size="16" Weight="1000" Italic="0" />
+		</Entry>
+
+		<Entry Name="Icon" Alignment="0" OffsetX="2" OffsetY="3" SizeX="16" SizeY="16" />
+
+		<EntryGroup Name="CloseButton">
+			<Entry Platform="Windows" Bitmap="Close.png" NumberImages="5" Alignment="2" OffsetX="-3" OffsetY="1" />
+			<Entry Platform="Windows" Scale="2" Bitmap="Close-2x.png" NumberImages="5" Alignment="2" OffsetX="-3" OffsetY="1" />
+
+			<Entry Platform="Windows" PlatformVersion="6.2-6.3" Bitmap="Close-win8.png" NumberImages="5" Alignment="2" OffsetX="-3" OffsetY="0" />
+			<Entry Platform="Windows" Scale="2" PlatformVersion="6.2-6.3" Bitmap="Close-win8-2x.png" NumberImages="5" Alignment="2" OffsetX="-3" OffsetY="0" />
+
+			<Entry Platform="Mac" Bitmap="Close-osx.png" NumberImages="5" Alignment="0" OffsetX="7" OffsetY="6" />
+		</EntryGroup>
+
+		<EntryGroup Name="MaximizeButton">
+			<Entry Platform="Windows" Bitmap="Maximize.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="1" />
+			<Entry Platform="Windows" Scale="2" Bitmap="Maximize-2x.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="1" />
+
+			<Entry Platform="Windows" PlatformVersion="6.2-6.3" Bitmap="Maximize-win8.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="0" />
+			<Entry Platform="Windows" Scale="2" PlatformVersion="6.2-6.3" Bitmap="Maximize-win8-2x.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="0" />
+
+			<Entry Platform="Mac" Bitmap="Maximize-Restore-osx.png" NumberImages="5" Alignment="0" OffsetX="45" OffsetY="6" />
+		</EntryGroup>
+
+		<EntryGroup Name="RestoreButton">
+			<Entry Platform="Windows" Bitmap="Restore.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="1" />
+			<Entry Platform="Windows" Scale="2" Bitmap="Restore-2x.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="1" />
+
+			<Entry Platform="Windows" PlatformVersion="6.2-6.3" Bitmap="Restore-win8.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="0" />
+			<Entry Platform="Windows" Scale="2" PlatformVersion="6.2-6.3" Bitmap="Restore-win8-2x.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="0" />
+
+			<Entry Platform="Mac" Bitmap="Maximize-Restore-osx.png" NumberImages="5" Alignment="0" OffsetX="45" OffsetY="6" />
+		</EntryGroup>
+
+		<EntryGroup Name="MinimizeButton">
+			<Entry Platform="Windows" Bitmap="Minimize.png" NumberImages="5" Alignment="2" OffsetX="-94" OffsetY="1" />
+			<Entry Platform="Windows" Scale="2" Bitmap="Minimize-2x.png" NumberImages="5" Alignment="2" OffsetX="-94" OffsetY="1" />
+
+			<Entry Platform="Windows" PlatformVersion="6.2-6.3" Bitmap="Minimize-win8.png" NumberImages="5" Alignment="2" OffsetX="-75" OffsetY="0" />
+			<Entry Platform="Windows" Scale="2" PlatformVersion="6.2-6.3" Bitmap="Minimize-win8-2x.png" NumberImages="5" Alignment="2" OffsetX="-75" OffsetY="0" />
+
+			<Entry Platform="Mac" Bitmap="Minimize-osx.png" NumberImages="5" Alignment="0" OffsetX="26" OffsetY="6" />
+		</EntryGroup>
+
+		<Entry Name="TopBorder" Bitmap="Frame_TopBorder.png" Margins="2,3,2,3"/>
+		<Entry Name="BottomBorder" Bitmap="Frame_BottomBorder.png" Margins="0,0,0,0"/>
+		<Entry Name="LeftBorder" Bitmap="Frame_LeftBorder.png" />
+		<Entry Name="RightBorder" Bitmap="Frame_RightBorder.png" />
+
+		<Entry Name="Button" Bitmap="Frame_Button.png" Margins="2,2,2,2" NumberImages="4" DrawMode="REGION_B_STRETCH" >
+			<Colors PressedText="D8D8D8" OverText="B5B5B5" />
+		</Entry>
+		<Entry Name="DefaultButton" Bitmap="Frame_Button.png" Margins="2,2,2,2" NumberImages="4" DrawMode="REGION_B_STRETCH" >
+			<Colors PressedText="D8D8D8" OverText="B5B5B5" />
+		</Entry>
+
+		<!-- NOTE: Options window, rename/move dialogue ++ background color -->
+		<Entry Name="DialogBack" >
+			<Colors Back="202020" />
+		</Entry>
+
+		<Entry Name="TextBox" />
+		<Entry Name="Edit" >
+			<Entry Name="Background" Bitmap="Frame_Edit.png" NumberImages="4" Margins="2,2,2,2" />
+			<Colors Text="B5B5B5" Back="171717" DisabledBack="2b2b2b" DisabledText="777777" />
+		</Entry>
+
+		<Entry Name="ComboBox" Bitmap="Frame_ComboBoxButton.png" NumberImages="4" Margins="0,1,17,1" >
+			<Data ArrowBorder="0" />
+			<Colors Text="909090" Back="171717" DisabledBack="2b2b2b" DisabledText="777777" OverText="909090" OpenText="909090" />
+			<Entry Name="Background" Bitmap="Frame_ComboBoxBackground.png" NumberImages="4" Margins="3,3,3,3" />
+		</Entry>
+		<Entry Name="CheckBox" Bitmap="Frame_CheckBox.png" NumberImages="8" />
+		<Entry Name="RadioButton" Bitmap="Frame_RadioButton.png" NumberImages="8" />
+
+		<Entry Name="OptionsList" >
+			<Colors Text="909090" SelectText="D8D8D8" HilightText="D8D8D8" Back="171717" Shadow="171717" Hilight="2b2b2b" />
+			<Entry Name="Selection" Bitmap="OptionsList_Selection.png" NumberImages="3" Columns="4,?-Flex,4" Rows="4,?-Flex,4,?-Flex,4" />
+		</Entry>
+
+		<Entry Name="CollapseArrowsDown" Bitmap="Frame_CollapseArrowsDown.png" NumberImages="4" />
+		<Entry Name="CollapseArrowsUp" Bitmap="Frame_CollapseArrowsUp.png" NumberImages="4" />
+
+		<EntryGroup Name="FullScreenArrowsExpand">
+			<Entry Bitmap="Frame_FullScreenArrowsExpand.png" NumberImages="4" />
+			<Entry Scale="2" Bitmap="Frame_FullScreenArrowsExpand-2x.png" NumberImages="4" />
+		</EntryGroup>
+
+		<EntryGroup Name="FullScreenArrowsCollapse">
+			<Entry Bitmap="Frame_FullScreenArrowsCollapse.png" NumberImages="4" />
+			<Entry Scale="2" Bitmap="Frame_FullScreenArrowsCollapse-2x.png" NumberImages="4" />
+		</EntryGroup>
+	</FRAME>
+
+	<TREE>
+		<Colors Text="909090" Back="171717" OverText="c8c8c8" SelectedText="D8D8D8" SelectedBack="171717" />
+		<!-- <Entry Name="Selection" Bitmap="Tree_Selection.png" NumberImages="3" Columns="5,?-Flex,5" Rows="4,?-Flex,4,?-Flex,4" /> -->
+		<EntryGroup name="ExpandButton">
+			<Entry Bitmap="Tree_ExpandButton.png" NumberImages="2" />
+			<Entry Scale="2" Bitmap="Tree_ExpandButton-2x.png" NumberImages="2" />
+		</EntryGroup>
+	</TREE>
+
+	<!-- NOTE: VIEWHEADER is where you'll fint the split view tabs, links etc. It also affects the header you'll get when you for instance double click an album in album views.-->
+	<VIEWHEADER>
+		<Colors HeaderBackground="171717" HeaderText="909090" HeaderHotText="FFFFFF" ActiveTabText="c8c8c8" Background="2b2b2b" Text="909090" />
+	</VIEWHEADER>
+
+	<SPLITVIEWTAB>
+		<Data InternalMarginLeft="11" InternalMarginRight="11" OverlapLeft="3" OverlapRight="0" ImageToTextSpacing="4" FirstItemTextOffset="4" MakeFinalItemSameWidth="1" />
+		<Entry Name="Button" Bitmap="SplitViewTab_Button.png" NumberImages="4" Margins="5,5,5,5" />
+		<Entry Name="BorderRow" Bitmap="SplitViewTab_BorderRow.png" NumberImages="2" />
+
+		<EntryGroup Name="Close">
+			<Entry Bitmap="SplitViewTab_Close.png" NumberImages="5" />
+			<Entry Scale="2" Bitmap="SplitViewTab_Close-2x.png" NumberImages="5" />
+		</EntryGroup>
+
+	</SPLITVIEWTAB>
+
+	<LIST>
+		<!-- Note that Text color will also affect borders around certain items. -->
+		<Colors Text="909090" Back="2b2b2b" SelectedText="D8D8D8" SelectedBack="3A3A3A" HotText="B5B5B5" Gridline="333333" GridlineBack="2f2f2f" OverText="D8D8D8" />
+
+		<!-- Column headers in lists. Note that TextColor will also affect borders around certain items. -->
+		<Entry Name="HeaderBar" Bitmap="List_HeaderBar.png" Margins="3,2,3,3" NumberImages="3" TextColor="909090" OverTextColor="ffffff" PressedTextColor="ffffff" />
+
+		<Entry Name="BrowseHeaderBar" Bitmap="List_BrowseHeaderBar.png" Margins="3,2,3,3" />
+
+		<EntryGroup Name="Rating">
+			<Entry Bitmap="List_Rating.png" NumberImages="3" />
+			<Entry Scale="1.5" Bitmap="List_Rating-1,5x.png" NumberImages="3" />
+			<Entry Scale="2" Bitmap="List_Rating-2x.png" NumberImages="3" />
+		</EntryGroup>
+
+		<EntryGroup Name="RatingClear">
+			<Entry Bitmap="List_RatingClear.png" NumberImages="4" />
+			<Entry Scale="2" Bitmap="List_RatingClear-2x.png" NumberImages="4" />
+		</EntryGroup>
+
+		<Entry Name="Selection" Bitmap="List_Selection.png" NumberImages="3" Columns="4,?-Flex,4" Rows="4,?-Flex,4,?-Flex,4" />
+		<Entry Name="GroupHeader" Bitmap="List_GroupHeader.png" NumberImages="1" Columns="398,?-Flex,398" />
+		<Entry Name="LinkButton" Bitmap="List_ListButton.png" NumberImages="5" />
+		<Entry Name="InPlaceFindToolbar" Bitmap="List_InPlaceFindToolbar.png" Margins="3,3,3,3" />
+	</LIST>
+
+	<MENU>
+		<Colors Text="909090" SelectedText="D8D8D8" SelectedBack="0078d7" Disabled="777777" Separator="333333" />
+		<Entry Name="Back" Bitmap="Menu_Back.png" Margins="1,1,1,1" />
+		<Entry Name="Item" Bitmap="Menu_Item.png" NumberImages="2" Columns="4,?-Flex,4" Rows="4,?-Flex,4,?-Flex,4" />
+	</MENU>
+
+	<PROGRESSBAR>
+		<Entry Name="Back" Bitmap="Progress_Back.png" Margins="2,2,2,2" />
+		<Entry Name="Front" Bitmap="Progress_Front.png" Margins="2,2,2,2" />
+	</PROGRESSBAR>
+
+	<GROUPBOX>
+		<Colors Text="B5B5B5" />
+		<Entry Name="LeftBorder" Bitmap="Groupbox_LeftBorder.png" Margins="1,0,0,0" />
+		<Entry Name="RightBorder" Bitmap="Groupbox_RightBorder.png" Margins="0,0,1,0" />
+		<Entry Name="TopBorder" Bitmap="Groupbox_TopBorder.png" Margins="0,1,0,0" />
+		<Entry Name="BottomBorder" Bitmap="Groupbox_BottomBorder.png" Margins="0,0,0,1" />
+	</GROUPBOX>
+
+	<TAB>
+		<Colors Text="000000" OverText="c8c8c8" SelectedText="f0f4fd" />
+		<Entry Name="Button" Bitmap="Tab_Button.png" Margins="6,6,8,2" NumberImages="3" />
+		<Entry Name="LeftBorder" Bitmap="Tab_LeftBorder.png" Margins="3,5,0,3" />
+		<Entry Name="RightBorder" Bitmap="Tab_RightBorder.png" Margins="0,5,5,3" />
+		<Entry Name="TopBorder" Bitmap="Tab_TopBorder.png" Margins="0,0,0,3" />
+		<Entry Name="BottomBorder" Bitmap="Tab_BottomBorder.png" Margins="0,0,0,3" />
+	</TAB>
+
+	<SLIDER>
+		<Entry Name="HorizontalBackground" Bitmap="Slider_HorizontalBackground.png" NumberImages="1" Margins="2,2,2,2" />
+		<Entry Name="HorizontalHandle" Bitmap="Slider_HorizontalHandle.png" NumberImages="4" Margins="4,1,4,1" />
+		<Entry Name="VerticalBackground" Bitmap="Slider_VerticalBackground.png" NumberImages="2" Margins="16,0,0,0" />
+		<Entry Name="VerticalHandle" Bitmap="Scrollbar_VerticalHandle.png" NumberImages="4" Margins="0,6,0,6" />
+	</SLIDER>
+
+	<UPDOWN>
+		<Entry Name="Up" Bitmap="UpDown_Up.png" NumberImages="4" Margins="3,3,13,3" />
+		<Entry Name="Down" Bitmap="UpDown_Down.png" NumberImages="4" Margins="3,4,13,3" />
+		<Entry Name="Left" Bitmap="UpDown_Left.png" NumberImages="4" Margins="2,2,2,2" />
+		<Entry Name="Right" Bitmap="UpDown_Right.png" NumberImages="4" Margins="2,2,2,2" />
+	</UPDOWN>
+
+	<!-- NOTE: The default splitter takes up to much space. Yes, it's a bit more difficult to hit with it at 2 px, but it's still usable. In this skin it's matching the tree background color. There's one "issue" with this though. Views where you've got a pane to the side of the list, you'll get a 2px dark border that doesn't match the list background color. There's nothing that can be done about this, short of removing the splitter completely.  -->
+	<SPLITTER>
+		<Data DefaultSize="2" />
+		<Entry Name="HorizontalBackground" Bitmap="Splitter_Background_H.png" Margins="9,1,9,1" Columns="398,?-Flex,398" />
+		<Entry Name="VerticalBackground" Bitmap="Splitter_Background_V.png" Rows="23,?-Flex" />
+		<Entry Name="HorizontalHandle" Bitmap="Splitter_Horizontal.png" Margins="2,1,1,1" DrawMode="REGION_E_HTILE,REGION_E_VTILE" />
+		<!-- TODO: Is there any way to make sure the "triangle" control doesn't show up in a splitter, without having to make "VericalHandle" a stupidly tall image? There probably is, but how?! -->
+		<Entry Name="VerticalHandle" Bitmap="Splitter_Vertical.png" Margins="1,2,1,1" DrawMode="REGION_E_HTILE,REGION_E_VTILE" />
+	</SPLITTER>
+
+	<SCROLLBAR>
+		<EntryGroup Name="HorizontalLeftArrow">
+			<Entry Bitmap="Scrollbar_HorizontalLeftArrow.png" NumberImages="4" Margins="2,2,2,2" />
+			<Entry Scale="2" Bitmap="Scrollbar_HorizontalLeftArrow-2x.png" NumberImages="4" Margins="2,2,2,2" />
+		</EntryGroup>
+
+		<EntryGroup Name="HorizontalRightArrow">
+			<Entry Bitmap="Scrollbar_HorizontalRightArrow.png" NumberImages="4" Margins="2,2,2,2" />
+			<Entry Scale="2" Bitmap="Scrollbar_HorizontalRightArrow-2x.png" NumberImages="4" Margins="2,2,2,2" />
+		</EntryGroup>
+
+		<EntryGroup Name="HorizontalHandle">
+			<Entry Bitmap="Scrollbar_HorizontalHandle.png" NumberImages="4" Margins="6,0,6,0" DrawMode="REGION_E_HTILE" />
+			<Entry Scale="2" Bitmap="Scrollbar_HorizontalHandle-2x.png" NumberImages="4" Margins="6,0,6,0" DrawMode="REGION_E_HTILE" />
+		</EntryGroup>
+
+		<EntryGroup Name="HorizontalBackground">
+			<Entry Bitmap="Scrollbar_HorizontalBackground.png" NumberImages="4" Margins="0,0,0,0" DrawMode="REGION_E_HTILE" />
+			<Entry Scale="2" Bitmap="Scrollbar_HorizontalBackground-2x.png" NumberImages="4" Margins="0,0,0,0" DrawMode="REGION_E_HTILE" />
+		</EntryGroup>
+
+		<EntryGroup Name="VerticalUpArrow">
+			<Entry Bitmap="Scrollbar_VerticalUpArrow.png" NumberImages="4" Margins="0,0,0,0" />
+			<Entry Scale="2" Bitmap="Scrollbar_VerticalUpArrow-2x.png" NumberImages="4" Margins="0,0,0,0" />
+		</EntryGroup>
+
+		<EntryGroup Name="VerticalDownArrow">
+			<Entry Bitmap="Scrollbar_VerticalDownArrow.png" NumberImages="4" Margins="0,0,0,0" />
+			<Entry Scale="2" Bitmap="Scrollbar_VerticalDownArrow-2x.png" NumberImages="4" Margins="0,0,0,0" />
+		</EntryGroup>
+
+		<EntryGroup Name="VerticalHandle">
+			<Entry Bitmap="Scrollbar_VerticalHandle.png" NumberImages="4" Margins="0,6,0,6" />
+			<Entry Scale="2" Bitmap="Scrollbar_VerticalHandle-2x.png" NumberImages="4" Margins="0,6,0,6" />
+		</EntryGroup>
+
+		<EntryGroup Name="VerticalBackground">
+			<Entry Bitmap="Scrollbar_VerticalBackground.png" NumberImages="4" Margins="0,0,0,0" DrawMode="REGION_E_VTILE" />
+			<Entry Scale="2" Bitmap="Scrollbar_VerticalBackground-2x.png" NumberImages="4" Margins="0,0,0,0" DrawMode="REGION_E_VTILE" />
+		</EntryGroup>
+
+		<EntryGroup Name="Stump">
+			<Entry Bitmap="Scrollbar_Stump.png" Margins="0,0,0,0" />
+			<Entry Bitmap="Scrollbar_Stump-2x.png" Margins="0,0,0,0" />
+		</EntryGroup>
+	</SCROLLBAR>
+
+	<!-- I never, ever use the "car radio" feature, but if you have it enabled then let's at least make it a bit less in-your-face -->
+	<CARRADIO>
+		<Entry Name="ButtonLeft" Bitmap="CarRadio_ButtonLeft.png" NumberImages="4" Margins="3,3,2,0" OverTextColor="0078d7" PressedTextColor="D73100" />
+		<Entry Name="ButtonMiddle" Bitmap="CarRadio_ButtonMiddle.png" NumberImages="4" Margins="0,3,3,0" OverTextColor="0078d7" PressedTextColor="D73100" />
+		<Entry Name="ButtonRight" Bitmap="CarRadio_ButtonRight.png" NumberImages="4" Margins="0,3,3,0" OverTextColor="0078d7" PressedTextColor="D73100" />
+	</CARRADIO>
+
+</MJMS>

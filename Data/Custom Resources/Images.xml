@@ -1,0 +1,143 @@
+<!--
+Media Center Images Information XML (Default / English)
+-->
+
+<Images>
+  <Library>0</Library>
+  <Album>1</Album>
+  <PlaylistGroup>2</PlaylistGroup>
+  <Playlist>3</Playlist>
+  <Artist>4</Artist>
+  <PlayingNow>5</PlayingNow>
+  <TopHitsPlaylist>6</TopHitsPlaylist>
+  <Smartlist>7</Smartlist>
+  <PortableDevice>8</PortableDevice>
+  <WebMedia>9</WebMedia>
+  <Start>10</Start>
+  <BrowserScheme>11</BrowserScheme>
+  <Folder>12</Folder>
+  <RecentlyPlayed>13</RecentlyPlayed>
+  <CDBurner>14</CDBurner>
+  <VirtualFolder>15</VirtualFolder>
+  <TVTuner>16</TVTuner>
+  <Devices>17</Devices>
+  <RecentlyImported>18</RecentlyImported>
+  <Unchecked>19</Unchecked>
+  <GrayedCheck>20</GrayedCheck>
+  <Checked>21</Checked>
+  <MyComputer>22</MyComputer>
+  <MediaLibraryAlbum>23</MediaLibraryAlbum>
+  <MediaLibraryArtist>24</MediaLibraryArtist>
+  <!-- MediaLibraryAlbumType remove -->
+  <MediaLibraryGenre>26</MediaLibraryGenre>
+  <!-- MediaLibraryCDType remove -->
+  <MediaLibraryDate>28</MediaLibraryDate>
+  <MediaLibraryName>29</MediaLibraryName>
+  <MediaLibraryVolumeName>30</MediaLibraryVolumeName>
+  <MediaLibraryRating>31</MediaLibraryRating>
+  <MediaLibraryFileType>32</MediaLibraryFileType>
+  <MediaLibraryBitrate>33</MediaLibraryBitrate>
+  <MediaLibraryPlaylist>34</MediaLibraryPlaylist>
+  <MediaTypeAudio>35</MediaTypeAudio>
+  <MediaTypeImage>36</MediaTypeImage>
+  <MediaTypeVideo>37</MediaTypeVideo>
+  <!-- MediaTypeData removed -->
+  <!-- MediaTypeUnknown removed -->
+  <Browse>40</Browse>
+  <ListWarning>41</ListWarning>
+  <!-- GrayTagged removed -->
+  <Tagged>43</Tagged>
+  <Rename>44</Rename>
+  <Delete>45</Delete>
+  <Properties>46</Properties>
+  <Undo>47</Undo>
+  <Redo>48</Redo>
+  <Email>49</Email>
+  <Back>50</Back>
+  <Forward>51</Forward>
+  <Refresh>52</Refresh>
+  <RotateLeft>53</RotateLeft>
+  <RotateRight>54</RotateRight>
+  <RotateUpsideDown>55</RotateUpsideDown>
+  <ImageResize>56</ImageResize>
+  <RipCD>57</RipCD>
+  <BurnCD>58</BurnCD>
+  <MiniMe>59</MiniMe>
+  <ListStyle>60</ListStyle>
+  <!-- Extra Portable removed -->
+  <Record>62</Record>
+  <Convert>63</Convert>
+  <ImageAcquire>64</ImageAcquire>
+  <Import>65</Import>
+  <Print>66</Print>
+  <Favorites>67</Favorites>
+  <AddPlaylist>68</AddPlaylist>
+  <AddSmartlist>69</AddSmartlist>
+  <AddPlaylistGroup>70</AddPlaylistGroup>
+  <Copy>71</Copy>
+  <Paste>72</Paste>
+  <PluginManager>73</PluginManager>
+  <SkinManager>74</SkinManager>
+  <Options>75</Options>
+  <DSPStudio>76</DSPStudio>
+  <FullScreen>77</FullScreen>
+  <OpenFile>78</OpenFile>
+  <OpenURL>79</OpenURL>
+  <CopyListeningTo>80</CopyListeningTo>
+  <MediaEditor>81</MediaEditor>
+  <CDLabeler>82</CDLabeler>
+  <DownloadManager>83</DownloadManager>
+  <!-- ViewFilter removed -->
+  <ArtistInfo>85</ArtistInfo>
+  <FindCD>86</FindCD>
+  <QuickPlay>87</QuickPlay>
+  <ListPlay>88</ListPlay>
+  <ListPlayNotInDB>89</ListPlayNotInDB>
+  <ListMissing>90</ListMissing>
+  <ListAudio>91</ListAudio>
+  <ListAudioFiltered>92</ListAudioFiltered>
+  <ListAudioNotInDB>93</ListAudioNotInDB>
+  <ListImage>94</ListImage>
+  <ListImageFiltered>95</ListImageFiltered>
+  <ListImageNotInDB>96</ListImageNotInDB>
+  <ListVideo>97</ListVideo>
+  <ListVideoFiltered>98</ListVideoFiltered>
+  <ListVideoNotInDB>99</ListVideoNotInDB>
+  <ListUnknown>100</ListUnknown>
+  <ListUnknownFiltered>101</ListUnknownFiltered>
+  <ListUnknownNotInDB>102</ListUnknownNotInDB>
+  <BrowserSchemeGroup>103</BrowserSchemeGroup>
+  <LibraryBrowser>104</LibraryBrowser>
+  <Plugin>105</Plugin>
+  <ServicesAndPlugins>106</ServicesAndPlugins>
+  <Podcasts>107</Podcasts>
+  <PodcastFeed>108</PodcastFeed>
+  <PodcastDownloaded>109</PodcastDownloaded>
+  <Home>110</Home>
+  <Scheduler>111</Scheduler>
+  <PurchasedPlaylist>7</PurchasedPlaylist>
+  <SmallThumbStackTopCollapsed>113</SmallThumbStackTopCollapsed>
+  <SmallThumbStackTopExpanded>112</SmallThumbStackTopExpanded>
+  <SmallThumbStackMember>114</SmallThumbStackMember>
+  <ArtistColumnLink>115</ArtistColumnLink>
+  <AlbumColumnLink>115</AlbumColumnLink>
+  <OtherColumnLink>115</OtherColumnLink>
+  <Favorites>116</Favorites>
+  <TVRecord>117</TVRecord>
+  <TVSubscription>118</TVSubscription>
+  <TVRecordPartial>119</TVRecordPartial>
+  <TVSubscriptionPartial>120</TVSubscriptionPartial>
+  <TVSubscriptionSkip>121</TVSubscriptionSkip>
+  <TVNowRecording>122</TVNowRecording>
+  <TVNowPlaying>123</TVNowPlaying>
+  <TVRecorded>124</TVRecorded>
+  <DLNA>125</DLNA>
+  <ZoneLink>126</ZoneLink>
+  <LibraryInactive>127</LibraryInactive>
+  <PlayingNowInactive>128</PlayingNowInactive>
+  <AutomaticPlaylist>129</AutomaticPlaylist>
+  <AddAutomaticPlaylist>130</AddAutomaticPlaylist>
+  <LibraryAdd>131</LibraryAdd>
+  <PlayingNowOverview>132</PlayingNowOverview>
+  <PlayingNowChild>133</PlayingNowChild>
+</Images>
