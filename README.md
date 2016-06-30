@@ -1,5 +1,5 @@
 ## MODERN CARDS JRMC SKIN: DARK EDITION
-Modern Cards is a simple theme for JRiver Media Center 20 & 21, inspired in part by Google Now's Card UI, Microsoft Office 365 and Windows 10 (hence the name). It's still in development, and improvements and changes will be posted from time to time. 
+Modern Cards is a simple theme for JRiver Media Center 21+, inspired in part by Google Now's Card UI, Microsoft Office 365 and Windows 10 (hence the name). It's still in development, and improvements and changes will be posted from time to time. 
 
 ## UPDATES
 * 2016.06.30: Split out the dark edition of the skin to its own github repo, in preparation for a source code release.
