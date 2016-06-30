@@ -2,6 +2,7 @@
 Modern Cards is a simple theme for JRiver Media Center 20 & 21, inspired in part by Google Now's Card UI, Microsoft Office 365 and Windows 10 (hence the name). It's still in development, and improvements and changes will be posted from time to time. 
 
 ## UPDATES
+* 2016.06.30: Split out the dark edition of the skin to its own github repo, in preparation for a source code release.
 * 2016.01.25: Fixed issue with window close/max/restore/min buttons when using skin scaling.
 * 2015.09.20: Many more image assets for the scaling functionality added. Finally ready for a release, after several delays due to RL. There are still a few images that needs updating, but it's certainly usable by now. I've also changed the look of many of the buttons in the skin to better match up with Windows 10.
 * 2015.08.20: New style for the play/pause/next/prev buttons, and the shuffle etc. buttons. I've also redone much of the graphics in the skin to support the scaling function (useful for those wuth HiDPI monitors). The scaling support isn't 100% complete yet, but should mostly be fine for daily use. Please do report problems related to this, as I have limited options for testing this myself. I've also fixed a variety of bugs, and skinned some previously unskinned elements.
