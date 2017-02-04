@@ -24,6 +24,9 @@
 			<Entry Platform="Windows" Bitmap="Close.png" NumberImages="5" Alignment="2" OffsetX="-1" OffsetY="1" />
 			<Entry Platform="Windows" Scale="2" Bitmap="Close-2x.png" NumberImages="5" Alignment="2" OffsetX="-1" OffsetY="1" />
 
+			<Entry Platform="Linux" Bitmap="Close.png" NumberImages="5" Alignment="2" OffsetX="-1" OffsetY="1" />
+			<Entry Platform="Linux" Scale="2" Bitmap="Close-2x.png" NumberImages="5" Alignment="2" OffsetX="-1" OffsetY="1" />
+
 			<Entry Platform="Windows" PlatformVersion="6.2-6.3" Bitmap="Close-win8.png" NumberImages="5" Alignment="2" OffsetX="-3" OffsetY="0" />
 			<Entry Platform="Windows" Scale="2" PlatformVersion="6.2-6.3" Bitmap="Close-win8-2x.png" NumberImages="5" Alignment="2" OffsetX="-3" OffsetY="0" />
 
@@ -34,6 +37,9 @@
 		<EntryGroup Name="MaximizeButton">
 			<Entry Platform="Windows" Bitmap="Maximize.png" NumberImages="5" Alignment="2" OffsetX="-46" OffsetY="1" />
 			<Entry Platform="Windows" Scale="2" Bitmap="Maximize-2x.png" NumberImages="5" Alignment="2" OffsetX="-46" OffsetY="1" />
+
+			<Entry Platform="Linux" Bitmap="Maximize.png" NumberImages="5" Alignment="2" OffsetX="-46" OffsetY="1" />
+			<Entry Platform="Linux" Scale="2" Bitmap="Maximize-2x.png" NumberImages="5" Alignment="2" OffsetX="-46" OffsetY="1" />
 
 			<Entry Platform="Windows" PlatformVersion="6.2-6.3" Bitmap="Maximize-win8.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="0" />
 			<Entry Platform="Windows" Scale="2" PlatformVersion="6.2-6.3" Bitmap="Maximize-win8-2x.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="0" />
@@ -46,6 +52,9 @@
 			<Entry Platform="Windows" Bitmap="Restore.png" NumberImages="5" Alignment="2" OffsetX="-46" OffsetY="1" />
 			<Entry Platform="Windows" Scale="2" Bitmap="Restore-2x.png" NumberImages="5" Alignment="2" OffsetX="-46" OffsetY="1" />
 
+			<Entry Platform="Linux" Bitmap="Restore.png" NumberImages="5" Alignment="2" OffsetX="-46" OffsetY="1" />
+			<Entry Platform="Linux" Scale="2" Bitmap="Restore-2x.png" NumberImages="5" Alignment="2" OffsetX="-46" OffsetY="1" />
+
 			<Entry Platform="Windows" PlatformVersion="6.2-6.3" Bitmap="Restore-win8.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="0" />
 			<Entry Platform="Windows" Scale="2" PlatformVersion="6.2-6.3" Bitmap="Restore-win8-2x.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="0" />
 
@@ -56,6 +65,9 @@
 		<EntryGroup Name="MinimizeButton">
 			<Entry Platform="Windows" Bitmap="Minimize.png" NumberImages="5" Alignment="2" OffsetX="-91" OffsetY="1" />
 			<Entry Platform="Windows" Scale="2" Bitmap="Minimize-2x.png" NumberImages="5" Alignment="2" OffsetX="-91" OffsetY="1" />
+
+			<Entry Platform="Linux" Bitmap="Minimize.png" NumberImages="5" Alignment="2" OffsetX="-91" OffsetY="1" />
+			<Entry Platform="Linux" Scale="2" Bitmap="Minimize-2x.png" NumberImages="5" Alignment="2" OffsetX="-91" OffsetY="1" />
 
 			<Entry Platform="Windows" PlatformVersion="6.2-6.3" Bitmap="Minimize-win8.png" NumberImages="5" Alignment="2" OffsetX="-75" OffsetY="0" />
 			<Entry Platform="Windows" Scale="2" PlatformVersion="6.2-6.3" Bitmap="Minimize-win8-2x.png" NumberImages="5" Alignment="2" OffsetX="-75" OffsetY="0" />
@@ -207,7 +219,6 @@
 			<Entry Bitmap="PlayerBar_SearchClearButton.png" NumberImages="4" />
 			<Entry Scale="2" Bitmap="PlayerBar_SearchClearButton-2x.png" NumberImages="4" />
 		</EntryGroup>
-
 	</PLAYERBAR>
 
 	<TOOLBARS>
@@ -216,6 +227,10 @@
 		<!-- NOTE: This is the top bar where the dropdown menu items are located -->
 		<EntryGroup name="TopBar">
 			<Entry Platform="Windows" Alignment="0" OffsetX="8" OffsetY="0">
+				<Colors Text="B5B5B5" HilightText="D8D8D8" SelectedText="FFFFFF" Separator="333333" />
+			</Entry>
+
+			<Entry Platform="Linux" Alignment="0" OffsetX="8" OffsetY="0">
 				<Colors Text="B5B5B5" HilightText="D8D8D8" SelectedText="FFFFFF" Separator="333333" />
 			</Entry>
 
@@ -246,6 +261,8 @@
 		<Colors Text="909090" ActiveText="c8c8c8" Back="171717" ListBack="171717" ListText="909090" />
 		<!-- <Entry Name="Background" Bitmap="ActionWindow_Background.png" Margins="0,9,0,0" DrawMode="REGION_B_STRETCH,REGION_H_STRETCH,REGION_D_STRETCH,REGION_E_VSTRETCH,REGION_F_STRETCH" InternalMargins="0,0,0,0"/> -->
 		<!-- <Entry Name="Template" Bitmap="ActionWindow_Template.png" Margins="2,4,2,2" InternalMargins="1,0,1,0" VerticalSpacing="0" HeaderHeight="24" HeaderOnly="1" /> -->
+		<Entry Name="ActionBarNavigation" Bitmap="ActionWindowNavigation.png" NumberImages="24" />
+
 		<Entry Name="Back" Bitmap="ActionWindow_Back.png" Margins="0,0,0,0" NumberImages="3" />
 
 		<EntryGroup Name="Close">
@@ -285,6 +302,9 @@
 			<Entry Platform="Windows" Bitmap="Close.png" NumberImages="5" Alignment="2" OffsetX="-3" OffsetY="1" />
 			<Entry Platform="Windows" Scale="2" Bitmap="Close-2x.png" NumberImages="5" Alignment="2" OffsetX="-3" OffsetY="1" />
 
+			<Entry Platform="Linux" Bitmap="Close.png" NumberImages="5" Alignment="2" OffsetX="-3" OffsetY="1" />
+			<Entry Platform="Linux" Scale="2" Bitmap="Close-2x.png" NumberImages="5" Alignment="2" OffsetX="-3" OffsetY="1" />
+
 			<Entry Platform="Windows" PlatformVersion="6.2-6.3" Bitmap="Close-win8.png" NumberImages="5" Alignment="2" OffsetX="-3" OffsetY="0" />
 			<Entry Platform="Windows" Scale="2" PlatformVersion="6.2-6.3" Bitmap="Close-win8-2x.png" NumberImages="5" Alignment="2" OffsetX="-3" OffsetY="0" />
 
@@ -294,6 +314,9 @@
 		<EntryGroup Name="MaximizeButton">
 			<Entry Platform="Windows" Bitmap="Maximize.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="1" />
 			<Entry Platform="Windows" Scale="2" Bitmap="Maximize-2x.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="1" />
+
+			<Entry Platform="Linux" Bitmap="Maximize.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="1" />
+			<Entry Platform="Linux" Scale="2" Bitmap="Maximize-2x.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="1" />
 
 			<Entry Platform="Windows" PlatformVersion="6.2-6.3" Bitmap="Maximize-win8.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="0" />
 			<Entry Platform="Windows" Scale="2" PlatformVersion="6.2-6.3" Bitmap="Maximize-win8-2x.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="0" />
@@ -305,6 +328,9 @@
 			<Entry Platform="Windows" Bitmap="Restore.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="1" />
 			<Entry Platform="Windows" Scale="2" Bitmap="Restore-2x.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="1" />
 
+			<Entry Platform="Linux" Bitmap="Restore.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="1" />
+			<Entry Platform="Linux" Scale="2" Bitmap="Restore-2x.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="1" />
+
 			<Entry Platform="Windows" PlatformVersion="6.2-6.3" Bitmap="Restore-win8.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="0" />
 			<Entry Platform="Windows" Scale="2" PlatformVersion="6.2-6.3" Bitmap="Restore-win8-2x.png" NumberImages="5" Alignment="2" OffsetX="-49" OffsetY="0" />
 
@@ -314,6 +340,9 @@
 		<EntryGroup Name="MinimizeButton">
 			<Entry Platform="Windows" Bitmap="Minimize.png" NumberImages="5" Alignment="2" OffsetX="-94" OffsetY="1" />
 			<Entry Platform="Windows" Scale="2" Bitmap="Minimize-2x.png" NumberImages="5" Alignment="2" OffsetX="-94" OffsetY="1" />
+
+			<Entry Platform="Linux" Bitmap="Minimize.png" NumberImages="5" Alignment="2" OffsetX="-94" OffsetY="1" />
+			<Entry Platform="Linux" Scale="2" Bitmap="Minimize-2x.png" NumberImages="5" Alignment="2" OffsetX="-94" OffsetY="1" />
 
 			<Entry Platform="Windows" PlatformVersion="6.2-6.3" Bitmap="Minimize-win8.png" NumberImages="5" Alignment="2" OffsetX="-75" OffsetY="0" />
 			<Entry Platform="Windows" Scale="2" PlatformVersion="6.2-6.3" Bitmap="Minimize-win8-2x.png" NumberImages="5" Alignment="2" OffsetX="-75" OffsetY="0" />
@@ -528,5 +557,19 @@
 		<Entry Name="ButtonMiddle" Bitmap="CarRadio_ButtonMiddle.png" NumberImages="4" Margins="0,3,3,0" OverTextColor="0078d7" PressedTextColor="D73100" />
 		<Entry Name="ButtonRight" Bitmap="CarRadio_ButtonRight.png" NumberImages="4" Margins="0,3,3,0" OverTextColor="0078d7" PressedTextColor="D73100" />
 	</CARRADIO>
+
+	<ART>
+		<Entry Name="ActionBarNavigation" Bitmap="ActionWindowNavigation.png" />
+		<Entry Name="AutomaticPlaylistBackground" Bitmap="AutomaticPlaylistBackground.png" />
+		<Entry Name="DropHere" Bitmap="DropHere.png" />
+		<Entry Name="OptionsTree" Bitmap="OptionsTree.png" />
+		<Entry Name="SmallIcons" Bitmap="SmallIcons.png" />
+	</ART>
+
+	<TAGWINDOW>
+		<Entry Name="Group" Bitmap="TagWindow_Group.png" NumberImages="2" Columns="14,?-Flex" Rows="?-Flex,1" TextColor="B5B5B5" />
+		<Entry Name="Field" Bitmap="TagWindow_Field.png" NumberImages="2" />
+		<Entry Name="FieldLabel" Bitmap="TagWindow_FieldLabel.png" NumberImages="1" Columns="?-Flex" Rows="?-Flex,1" />
+	</TAGWINDOW>
 
 </MJMS>
