@@ -567,6 +567,7 @@
 	</ART>
 
 	<TAGWINDOW>
+		<Colors Text="ABB5BF" Selection="6AA5D8" />
 		<Entry Name="Group" Bitmap="TagWindow_Group.png" NumberImages="2" Columns="14,?-Flex" Rows="?-Flex,1" TextColor="B5B5B5" />
 		<Entry Name="Field" Bitmap="TagWindow_Field.png" NumberImages="2" />
 		<Entry Name="FieldLabel" Bitmap="TagWindow_FieldLabel.png" NumberImages="1" Columns="?-Flex" Rows="?-Flex,1" />
