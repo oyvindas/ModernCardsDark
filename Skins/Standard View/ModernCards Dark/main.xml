@@ -1,5 +1,5 @@
 <MJMS version="3.0">
-	<SKIN Name="Modern Cards: Dark Edition" Author="Øyvind de Freitas Sørensen" EMail="oyvind@defreitas.no" WebSite="https://defreitas.no" About="A JRMC skin inspired in part by Google Now, Windows 10 and Office 365" />
+	<SKIN Name="Modern Cards: Dark Edition (development branch)" Author="Øyvind de Freitas Sørensen" EMail="oyvind@defreitas.no" WebSite="https://defreitas.no" About="A JRMC skin inspired in part by Google Now, Windows 10 and Office 365" />
 
 	<!-- Enable the scale function in JRMC -->
 	<SCALE>
