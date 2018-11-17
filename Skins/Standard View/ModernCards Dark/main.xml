@@ -496,7 +496,7 @@
 
 	<!-- NOTE: The default splitter takes up to much space. Yes, it's a bit more difficult to hit with it at 2 px, but it's still usable. In this skin it's matching the tree background color. There's one "issue" with this though. Views where you've got a pane to the side of the list, you'll get a 2px dark border that doesn't match the list background color. There's nothing that can be done about this, short of removing the splitter completely.  -->
 	<SPLITTER>
-		<Data DefaultSize="2" />
+		<Data DefaultSize="4" />
 		<Entry Name="HorizontalBackground" Bitmap="Splitter_Background_H.png" Margins="9,1,9,1" Columns="398,?-Flex,398" />
 		<Entry Name="VerticalBackground" Bitmap="Splitter_Background_V.png" Rows="23,?-Flex" />
 		<Entry Name="HorizontalHandle" Bitmap="Splitter_Horizontal.png" Margins="2,1,1,1" DrawMode="REGION_E_HTILE,REGION_E_VTILE" />
