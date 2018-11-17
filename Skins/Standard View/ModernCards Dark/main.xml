@@ -401,8 +401,8 @@
 	</FRAME>
 
 	<TREE>
-		<Colors Text="909090" Back="171717" OverText="c8c8c8" SelectedText="D8D8D8" SelectedBack="171717" />
-		<!-- <Entry Name="Selection" Bitmap="Tree_Selection.png" NumberImages="3" Columns="5,?-Flex,5" Rows="4,?-Flex,4,?-Flex,4" /> -->
+		<Colors Text="909090" Back="171717" OverText="c8c8c8" SelectedText="E0E0E0" SelectedBack="171717" />
+		<Entry Name="Selection" Bitmap="Tree_Selection.png" NumberImages="4" Columns="?-Flex" />
 		<EntryGroup name="ExpandButton">
 			<Entry Bitmap="Tree_ExpandButton.png" NumberImages="2" />
 			<Entry Scale="2" Bitmap="Tree_ExpandButton-2x.png" NumberImages="2" />
@@ -428,7 +428,7 @@
 
 	<LIST>
 		<!-- Note that Text color will also affect borders around certain items. -->
-		<Colors Text="909090" Back="2b2b2b" SelectedText="D8D8D8" SelectedBack="3A3A3A" HotText="B5B5B5" Gridline="333333" GridlineBack="2f2f2f" OverText="D8D8D8" />
+		<Colors Text="a3a3a3" Back="2b2b2b" SelectedText="D8D8D8" SelectedBack="3A3A3A" HotText="B5B5B5" Gridline="333333" GridlineBack="2f2f2f" OverText="D8D8D8" />
 
 		<!-- Column headers in lists. Note that TextColor will also affect borders around certain items. -->
 		<Entry Name="HeaderBar" Bitmap="List_HeaderBar.png" Margins="3,2,3,3" NumberImages="3" TextColor="909090" OverTextColor="ffffff" PressedTextColor="ffffff" />
