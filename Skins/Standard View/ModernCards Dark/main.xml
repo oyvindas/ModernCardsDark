@@ -92,7 +92,7 @@
 
 		<!-- NOTE: This part controls the color and font style of the name of the song, length etc. at the top of the window. -->
 		<Entry Name="Display" >
-			<Colors TitleText="B5B5B5" StatusText="ABB5BF" />
+			<Colors TitleText="B5B5B5" StatusText="ABB5BF" WaveformBarA="2F2F2F" WaveformBarB="326692" />
 			<DisplayFont TitleSize="125" TitleWeight="800" StatusSize="95" StatusWeight="400" />
 		</Entry>
 
