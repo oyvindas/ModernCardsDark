@@ -398,6 +398,7 @@
 			<Entry Bitmap="Frame_FullScreenArrowsCollapse.png" NumberImages="4" />
 			<Entry Scale="2" Bitmap="Frame_FullScreenArrowsCollapse-2x.png" NumberImages="4" />
 		</EntryGroup>
+		<Entry Name="SpotlightButton" Bitmap="spotlight.png" NumberImages="1" />
 	</FRAME>
 
 	<TREE>
