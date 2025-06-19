@@ -6,6 +6,16 @@
 		<Data Enabled="1" />
 	</SCALE>
 
+	<!-- 	Enables the Glass function. Switching this option on gives certain MainFrame images a Transparent/Glassy Look -->
+	<GLASS>
+		<!-- <Data Enabled="1"/> -->
+	</GLASS>
+
+	<!-- OS-driven rounded corners for the main window. Currently used on Windows 11 only -->
+	<ROUNDCORNERS>
+		<Data Enabled="1" Small="0"/>
+	</ROUNDCORNERS>
+
 	<MAINFRAME>
 		<Data MinimumWidth="800" MinimumHeight="600" />
 
